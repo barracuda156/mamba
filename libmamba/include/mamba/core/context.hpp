@@ -68,6 +68,10 @@ namespace mamba
         static const char MAMBA_PLATFORM[] = "osx-64";
 #elif __arm64__
         static const char MAMBA_PLATFORM[] = "osx-arm64";
+#elif __ppc__
+        static const char MAMBA_PLATFORM[] = "osx-ppc";
+#elif __ppc64__
+        static const char MAMBA_PLATFORM[] = "osx-ppc64";
 #else
 #error "Unknown OSX platform"
 #endif
